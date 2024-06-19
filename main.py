@@ -3,18 +3,18 @@ import telebot,time
 from telebot import types
 from gatet import Tele
 import os
-token = '7184391416:AAFB2C3nHc1rO7Zr308e9JOL1FCzeLSMUnQ'
+token = '6783757670:AAH2F05z_141NJMVksp9ceeg7UZUqcgCUiI'
 bot=telebot.TeleBot(token,parse_mode="HTML")
-subscriber =1706037532
+subscriber =1857012370
 @bot.message_handler(commands=["start"])
 def start(message):
-	if not str(message.chat.id) == '1706037532':
+	if not str(message.chat.id) == '1857012370':
 		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription @strawhatchannel69")
 		return
 	bot.reply_to(message,"Send the file now")
 @bot.message_handler(content_types=["document"])
 def main(message):
-	if not str(message.chat.id) == '1706037532':
+	if not str(message.chat.id) == '1857012370':
 		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription @strawhatchannel69")
 		return
 	dd = 0
@@ -87,7 +87,7 @@ def main(message):
 𝒃𝒚 ➜ @strawhatchannel69 ''', reply_markup=mes)
 				msg = f'''◆ 𝑪𝑨𝑹𝑫  ➜ {cc} 
 ◆ 𝑺𝑻𝑨𝑻𝑼𝑺 ➜ 𝘼𝙋𝙋𝙍𝙊𝙑𝙀𝘿 🔥
-◆ 𝑹𝑬𝑺𝑼𝑳𝑻 ➜ 𝘾𝙑𝙑 𝘾𝙃𝘼𝙍𝙂𝙀𝘿 1£
+◆ 𝑹𝑬𝑺𝑼𝑳𝑻 ➜ 𝘾𝙑𝙑 𝘾𝙃𝘼𝙍𝙂𝙀𝘿 1€
 ◆ 𝑮𝑨𝑻𝑬𝑾𝑨𝒀 ➜ 𝙎𝙏𝙍𝙄𝙋𝙀 𝘼𝙐𝙏𝙃
 ━━━━━━━━━━━━━━━━━
 ◆ 𝑩𝑰𝑵 ➜ {cc[:6]} - {dicr} - {typ} 
@@ -98,7 +98,7 @@ def main(message):
 ◆ 𝑩𝒀: @strawhatchannel69
 ◆𝑷𝑹𝑶𝑿𝒀𝑺: 𝑷𝑹𝑶𝑿𝒀 𝑳𝑰𝑽𝑬 ✅ '''
 				print(last)
-				if 'Thank you for your message.' in last:
+				if 'Thank you for your donation' in last:
 					live += 1
 					bot.reply_to(message, msg)
 				elif 'security code is incorrect' in last or 'security code is invalid' in last:
